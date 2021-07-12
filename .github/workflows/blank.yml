@@ -39,11 +39,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-    TheOneThatDoesThings:
-      runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v2
-        - name: Lets see what in our working directory 
-          run: ls -a
-        - name: Print contents of the Readme
-          run: cat README.md
+  TheOneThatDoesThings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Lets see what in our working directory 
+        run: ls -a
+      - name: Print contents of the Readme
+        run: cat README.md
